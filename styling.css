@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: lightgoldenrodyellow;
+    margin: 0;
+}
+
+.details {
+    display: flex;
+    height: 50px;
+    padding: 5px;
+    gap: 200px;
+    justify-content: flex-end
+}
+
+button {
+    background-color: transparent;
+    padding: 10px;
+    border: 2px solid transparent;
+    font-size: large;
+    cursor: pointer;
+    text-align: center;
+    color: darkslategray;
+}
+
+button:hover {
+    border-color: darkslategray;
+}
+
+h1 {
+    margin-top: 60mm;
+    margin-left: 40mm;
+    font-size: 50px;
+    color: darkslategray;
+    text-shadow: 5px 5px 15px lightslategray;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.name {
+    display: flex;
+    padding: 20px;
+}
+
+img {
+    height: 600PX;
+    margin-left: 250px;
+    border-radius: 20px;
+    border: solid white;
+    box-shadow: 20px 20px 30px darkslategray;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+img:hover {
+    transform: scale(1.1);
+
+}
+
+hr {
+    border: solid;
+}
+
+.container {
+    height: 375px;
+}
+
+.icons {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 30px;
+    padding: 10px;
+
+
+}
+
+.icons img {
+    width: 50px;
+    height: auto;
+    margin-left: 100px;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+}
+
+h2 {
+    margin-right: 590px;
+    margin-top: 5px;
+
+}
