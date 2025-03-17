@@ -13,8 +13,14 @@ body {
     display: flex;
     height: 50px;
     padding: 5px;
-    gap: 200px;
-    justify-content: flex-end
+    gap: 750px;
+    justify-content: center;
+
+}
+
+.but{
+     word-spacing: 200px;
+    
 }
 
 button {
@@ -32,26 +38,43 @@ button:hover {
 }
 
 h1 {
-    margin-top: 60mm;
-    margin-left: 40mm;
     font-size: 50px;
     color: darkslategray;
     text-shadow: 5px 5px 15px lightslategray;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+.container{
+    padding: 50px;
+    justify-content: center;
+    display: flex;
+    gap: 300px;
+    align-items: center;
+    height: auto;
+    min-height: 560px;
+}
+.profile{
+    width: fit-content;
+    height: fit-content;
+    margin-top: 5px;
+}
 
 .name {
     display: flex;
     padding: 20px;
+    height: fit-content;
+    width: fit-content;
+    margin-top: 50px;
+
 }
 
 img {
-    height: 600PX;
-    margin-left: 250px;
+    height: 550PX;
     border-radius: 20px;
     border: solid white;
     box-shadow: 20px 20px 30px darkslategray;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-top: 20px;
+
 }
 
 img:hover {
@@ -83,34 +106,74 @@ hr {
     border: none;
     cursor: pointer;
     padding: 10px;
+    margin-left: 50px;
+    margin-top: 20px;
 }
 
 h2 {
     margin-right: 590px;
     margin-top: 5px;
-
 }
-@media (max-width: 1024px) {
-    .details {
-        gap: 20px;
-        justify-content: center;
-    }
+.ico{
+    justify-content: start;
+    margin-left: 80px;
+    width: fit-content;
+    word-spacing: 10px;
 }
-
 @media (max-width: 768px) {
     .details {
-        flex-direction: column;
-        height: auto;
         gap: 10px;
-        padding: 10px 0;
+        justify-content: center;
     }
 
-    .name {
-        font-size: 4vw;
+    .container{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        height: 135vh;
+        justify-content: center;
+        align-items: center;
+        }
+    h1{
+        font-size: 20px;
+    }
+    .profile{
+        height: 100px;
+        width: 100px;
+        margin-left: -50px;
+    }
+    .name{
+        text-align: center;
+        justify-content: center;
+        margin-top: -750px;
+    }
+    .ico {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        max-width: 300px; 
+        margin: 20px auto 0 auto;
+        margin-top: -250px;
     }
 
-    .icons img {
-        width: 30px;
-        margin-top: 800;
+    .icons {
+        display: flex;
+        gap: 10px; 
+        padding: 10px;
+        border-radius: 8px;
+        width: 350px;
+        margin-right: 140px;
+        
+    }
+
+    
+    .but{
+        word-spacing: 5px;
+        margin-top: -1px;
+    }
+    .profile{
+        margin-right: 100px;
+        margin-top: 10px;
     }
 }
